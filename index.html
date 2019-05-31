@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Quiz Machine</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Quiz Machine</h1>
+    <main>
+      <section>
+        <h2>Available Quizzes</h2>
+        <section id="quizzes"></section>
+      </section>
+      <section>
+        <h2>Create your own quiz question!</h2>
+        <form id="submitQuiz" enctype="application/x-www-form-urlencoded">
+          <label for="question">Your Quiz Question:</label>
+          <textarea name="question"></textarea>
+          <label for="a">Answer a:</label>
+          <input type="text" name="a" />
+          <label for="b">Answer b:</label>
+          <input type="text" name="b" />
+          <label for="c">Answer c:</label>
+          <input type="text" name="c" />
+          <label for="answer"
+            >Which one is the correct answer (a, b, or c)?:</label
+          >
+          <input type="text" name="answer" />
+          <button type="submit">Submit New Quiz</button>
+        </form>
+      </section>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
